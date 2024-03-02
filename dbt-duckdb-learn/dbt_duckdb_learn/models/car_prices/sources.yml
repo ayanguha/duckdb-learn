@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: source_car_prices
+    meta:
+      external_location: "read_csv('../../data/car_prices.csv')"
+    tables:
+      - name: car_prices

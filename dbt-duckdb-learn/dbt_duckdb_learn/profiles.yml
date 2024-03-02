@@ -1,0 +1,10 @@
+dbt_duckdb_learn_profile:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: 'dbt_duckdb_learn.duckdb'
+      extensions:
+        - httpfs
+        - parquet
+      

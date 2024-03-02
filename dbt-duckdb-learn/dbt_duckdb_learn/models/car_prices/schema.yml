@@ -1,0 +1,17 @@
+
+version: 2
+
+models:
+  - name: automatic_car_prices
+    description: "Car Prices for automatic"
+    columns:
+      - name: transmission
+        description: "must be transmission=automatic only "
+        tests:
+          - accepted_values:
+                values: ['automatic']
+          - not_null
+      - name: year
+        description: "year must be non-null"
+        tests:
+          - not_null
